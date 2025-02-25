@@ -154,6 +154,15 @@ st.markdown("""
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
+
+
+
+
+#------------------------------------------------------------------------
+#
+# This Api is saved in the creds.py file
+#
+#---------------------------------------------------------------------
 if "api_key" not in st.session_state:
     st.session_state.api_key = "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"
 
