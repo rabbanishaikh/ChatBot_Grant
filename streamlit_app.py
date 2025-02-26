@@ -127,6 +127,7 @@ st.markdown("""
     /* Sidebar styling */
     [data-testid="stSidebar"] {
         background-color: #F0F2F5;
+        color: #212529;
     }
     
     .sidebar-content {
@@ -135,6 +136,7 @@ st.markdown("""
         border-radius: 1rem;
         margin-bottom: 1.5rem;
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        color: #212529;
     }
     
     /* Header styling */
@@ -154,17 +156,8 @@ st.markdown("""
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-
-
-
-
-#------------------------------------------------------------------------
-#
-# This Api is saved in the creds.py file
-#
-#---------------------------------------------------------------------
 if "api_key" not in st.session_state:
-    st.session_state.api_key = "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"
+    st.session_state.api_key = "--------------------------------------------DROP THE API KEY HERE----------------------------------"
 
 if "show_welcome" not in st.session_state:
     st.session_state.show_welcome = True
